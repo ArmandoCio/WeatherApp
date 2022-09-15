@@ -36,7 +36,7 @@ let weather = {
           "url('https://source.unsplash.com/1920x1080/?" + name + "')";
       },
       search: function () {
-        this.fetchWeather(document.querySelector(".search-box").value);
+        this.fetchWeather(document.querySelector(".search-input").value);
       },
     };
     
@@ -52,4 +52,4 @@ let weather = {
         }
       });
     
-    weather.fetchWeather("paris");
+    weather.fetchWeather("london");
